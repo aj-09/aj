@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .jingao{
+    font-size: 4px;
+    color: crimson;
+    margin: 4px 0px 0px 55px;
+    display: none;
+}
+    </style> -->
+</head>
+<body>
+    <form action="./xx.php" method="post" >
+        <label for="account">&nbsp;&nbsp;账号: </label>
+        <input type="text" name="username" id="Nickname" > 
+        <br>
+        <div class="jingao">
+            !!!账号不能为空
+        </div><br>
+        <label for="account">&nbsp;&nbsp;密码: </label>
+        <input type="text" name="password"  id=" password" >
+        <div class="jingao">
+            !!!密码不能为空
+        </div> 
+       
+        
+        </form>
+        <button  class="tijiao"  
+        onclick="a();">dddddddd</button>
+
+
+
+        <script>
+            function a(){
+   var nic=document.getElementById("Nickname");
+   var pas=document.getElementById("password");
+   var jin=document.getElementsByClassName("jingao");
+   if(nic.value==""){
+      jin.style.display="none";      
+   }else{
+       jin.style.display="block";
+   }
+  
+}
+ </script>
+</body>
+</html>
